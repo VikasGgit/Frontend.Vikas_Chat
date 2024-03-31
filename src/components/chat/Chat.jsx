@@ -26,12 +26,15 @@ const[usr, setusr]=useState()
             socket.emit('joined', {user})
             socket.on("welcome",(data)=>{
                 setusr(data.message);
+                setChatt(prevChatt => [...prevChatt, data]);
                 console.log(data.user," : " ,data.message);
             });
             socket.on("userJoined", (data)=>{
+                setChatt(prevChatt => [...prevChatt, data]);
                 console.log(data.user," : " ,data.message);
             })        
             socket.on("leave", (data)=>{
+                setChatt(prevChatt => [...prevChatt, data]);
                 console.log(data.user," : " ,data.message);
             })    
             return ()=>{
