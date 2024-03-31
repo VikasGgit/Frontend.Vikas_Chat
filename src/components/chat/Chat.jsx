@@ -34,7 +34,7 @@ const[usr, setusr]=useState()
                 console.log(data.user," : " ,data.message);
             })        
             socket.on("leave", (data)=>{
-                setChatt(prevChatt => [...prevChatt, data]);
+                // setChatt(prevChatt => [...prevChatt, data]);
                 console.log(data.user," : " ,data.message);
             })    
             return ()=>{
