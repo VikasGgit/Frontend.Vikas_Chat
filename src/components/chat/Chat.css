@@ -1,0 +1,123 @@
+/* .chatPage{
+    background-color: rgba(50, 45, 45, 0.543);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatContainer{
+    background-color: whitesmoke;
+    height: 60%;
+    width: 50%;
+
+}
+.header{
+    background-color: rgb(174, 222, 221);
+    height: 15%;
+    color:red;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;    
+}
+.inputBox{
+    display: flex;
+    outline: none;
+    padding: 2px;
+    height: 15%;
+    box-sizing: border-box;
+
+}
+.inputBox input{
+    width: 80%;
+    font-size: large;
+    outline: none;
+}
+.inputBox button{
+    width: 20%;
+    background-color: rgb(186, 55, 55);
+    font-size: x-large;
+}
+.inputBox button:hover{
+    background-color: rgb(204, 255, 0);
+    font-size: xx-large;
+    cursor: pointer;
+}
+.chatBox{
+    height: 70%;
+    box-sizing: border-box;
+    overflow-y: auto;
+} */
+
+
+/* Base styles */
+.chatPage {
+    background-color: rgba(50, 45, 45, 0.543);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatContainer {
+    background-color: whitesmoke;
+    height: 60%;
+    width: 50%;
+    max-width: 500px; /* Limit container width on larger screens */
+}
+
+.header {
+    background-color: rgb(174, 222, 221);
+    height: 15%;
+    color: red;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.inputBox {
+    display: flex;
+    outline: none;
+    padding: 2px;
+    height: 15%;
+    box-sizing: border-box;
+}
+
+.inputBox input {
+    width: 80%;
+    font-size: large;
+    outline: none;
+}
+
+.inputBox button {
+    width: 20%;
+    background-color: rgb(186, 55, 55);
+    font-size: large;
+    transition: all ease 0.2s;
+    overflow: hidden;
+}
+
+.inputBox button:hover {
+    background-color: rgb(204, 255, 0);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.chatBox {
+    height: 70%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .chatContainer {
+        width: 80%; /* Adjust container width for smaller screens */
+    }
+}
+
+
