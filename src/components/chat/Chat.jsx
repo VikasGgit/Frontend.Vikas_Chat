@@ -7,7 +7,7 @@ import ReactScroller from "react-scroll-to-bottom"
 
 
 
-const ENDPOINT = "https://server-vikas-chat.vercel.app/"
+const ENDPOINT = "https://server-vikas-chat.onrender.com/"
 let socket;
 const Chat=()=> {
 const [chatt, setChatt]=useState([])
